@@ -1,0 +1,48 @@
+encoding "utf-8";    
+
+TTextMinerConfig {
+	Dictionary="dic.gzt";
+	
+	Input = {File ="input_sample.txt"}
+	
+	
+	Output = {File = "output.json"
+				Format = text}
+	Articles = [
+			{Name = "грамматика"}
+			]
+	Facts = [
+			{ Name = "Error"}
+			]
+	Facts = [
+			{ Name = "Agreement"}
+			]	
+	Facts = [
+			{ Name = "NumAgr"}
+			]	
+	Facts = [
+			{ Name = "AgrSP"}
+			]	
+	Facts = [
+			{ Name = "AgrDef"}
+			]
+	Facts = [
+			{ Name = "AgrAdjNoun"}
+			]	
+	Facts = [
+			{ Name = "AgrNounNoun"}
+			]	
+	Facts = [
+			{ Name = "AgrNConjNV"}
+			]
+	Facts = [
+			{ Name = "AgrAdjNV"}
+			]						
+	PrettyOutput="pretty.html"
+
+	Output ={
+	Format = text;
+	}
+PrintRules = "rules.txt";
+PrintTree = "tree.txt"
+}

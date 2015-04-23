@@ -1,0 +1,1866 @@
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.34
+S  ->  AdjP[*хорошим]  {Noun%TERM}[друзями] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*хорошим] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*хорошим] :: 0.66666666
+|           Adj  ->  хорошим :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзями] :: 0.66666666
+        Noun  ->  друзями :: 1
+
+coverage: 2, weight: 0.33443223
+S  ->  AdjP[*многие]  {Noun%TERM}[любовниц] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*многие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*многие] :: 0.66666666
+|           Adj  ->  многие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*любовниц] :: 0.66666666
+        Noun  ->  любовниц :: 1
+
+coverage: 4, weight: 0.33351158
+S  ->  {что%LEMMA}[*что]  {Word%TERM}[такой]  {Noun%TERM}[друг]  Punct[?] :: 0.35
+|   
+|__ {что%LEMMA}  ->  что[*что] :: 0.66666666
+|       что  ->  что :: 1
+|   
+|__ {Word%TERM}  ->  Word[*такой] :: 0.66666666
+|       Word  ->  такой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Punct  ->  ? :: 1
+
+coverage: 2, weight: 0.33346153
+S  ->  AdjP[*наша]  {Noun%TERM}[друзья] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*наша] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*наша] :: 0.66666666
+|           Adj  ->  наша :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзья] :: 0.66666666
+        Noun  ->  друзья :: 1
+
+coverage: 5, weight: 0.33339598
+S  ->  {Noun%TERM}[*друг]  Def[-]  DefW[очень простой вещь] :: 0.34333333
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Def  ->  Hyphen[*-] :: 0.66666666
+|       Hyphen  ->  - :: 1
+|   
+|__ DefW  ->  {Adv+}[*очень]  Adj[простой]  Noun[вещь] :: 0.36666666
+    |   
+    |__ {Adv+}  ->  Adv[*очень] :: 0.66666666
+    |       Adv  ->  очень :: 1
+    |   
+    |__ Adj  ->  простой :: 1
+    |   
+    |__ Noun  ->  вещь :: 1
+
+coverage: 1, weight: 0.33339177
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33339598
+S  ->  {Adv%TERM+}[*очень]  AdjP[простой]  {Noun%TERM}[вещь] :: 0.36666666
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*очень] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*очень] :: 0.66666666
+|           Adv  ->  очень :: 1
+|   
+|__ AdjP  ->  {Adj%TERM}[*простой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*простой] :: 0.66666666
+|           Adj  ->  простой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*вещь] :: 0.66666666
+        Noun  ->  вещь :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33339598
+S  ->  AdjP[*простой]  {Noun%TERM}[вещь] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*простой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*простой] :: 0.66666666
+|           Adj  ->  простой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*вещь] :: 0.66666666
+        Noun  ->  вещь :: 1
+
+
+
+==================== multiwords ====================
+
+друг_-_очень_простой_вещь: TAuxDicArticle, 
+	грамматика, 
+многие_любовниц: TAuxDicArticle, 
+	грамматика, 
+наша_друзья: TAuxDicArticle, 
+	грамматика, 
+хорошим_друзями: TAuxDicArticle, 
+	грамматика, 
+что_такой_друг_?: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.34333333
+S  ->  {что%LEMMA}[*что]  {Word%TERM}[такой]  {Noun%TERM}[друг]  Punct[?] :: 0.35
+|   
+|__ {что%LEMMA}  ->  что[*что] :: 0.66666666
+|       что  ->  что :: 1
+|   
+|__ {Word%TERM}  ->  Word[*такой] :: 0.66666666
+|       Word  ->  такой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Punct  ->  ? :: 1
+
+coverage: 4, weight: 0.33380952
+S  ->  {что%LEMMA}[*что]  {Word%TERM}[такой]  {Noun%TERM}[друг]  Punct[.] :: 0.35
+|   
+|__ {что%LEMMA}  ->  что[*что] :: 0.66666666
+|       что  ->  что :: 1
+|   
+|__ {Word%TERM}  ->  Word[*такой] :: 0.66666666
+|       Word  ->  такой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Punct  ->  . :: 1
+
+coverage: 3, weight: 0.33366666
+S  ->  {Noun%TERM}[*друг]  {Verb%TERM}[слышал]  {SimConjAnd%TERM}[и]  {Verb%TERM}[нравится] :: 0.35
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*слышал] :: 0.66666666
+|       Verb  ->  слышал :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*нравится] :: 0.66666666
+        Verb  ->  нравится :: 1
+
+coverage: 3, weight: 0.33354377
+S  ->  {Word%TERM}[*андрей]  {SimConjAnd%TERM}[и]  {Word%TERM}[я]  {Verb%TERM}[любят] :: 0.35185185
+|   
+|__ {Word%TERM}  ->  Word[*андрей] :: 0.66666666
+|       Word  ->  андрей :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*я] :: 0.66666666
+|       Word  ->  я :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*любят] :: 0.66666666
+        Verb  ->  любят :: 1
+
+coverage: 4, weight: 0.33347966
+S  ->  {Adj%TERM+}[хороший]  {Word%TERM}[*друг]  {Word%TERM}[я]  {Verb%TERM}[буду] :: 0.38888888
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*хороший] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*хороший] :: 0.66666666
+|           Adj  ->  хороший :: 1
+|   
+|__ {Word%TERM}  ->  Word[*друг] :: 0.66666666
+|       Word  ->  друг :: 1
+|   
+|__ {Word%TERM}  ->  Word[*я] :: 0.66666666
+|       Word  ->  я :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*буду] :: 0.66666666
+        Verb  ->  буду :: 1
+
+coverage: 3, weight: 0.33345029
+S  ->  {Word%TERM}[разных]  {Word%TERM}[*культурах]  {Verb%TERM}[есть] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*разных] :: 0.66666666
+|       Word  ->  разных :: 1
+|   
+|__ {Word%TERM}  ->  Word[*культурах] :: 0.66666666
+|       Word  ->  культурах :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*есть] :: 0.66666666
+        Verb  ->  есть :: 1
+
+coverage: 3, weight: 0.33336579
+S  ->  {Adv%TERM+}[*очень]  AdjP[разные]  {Noun%TERM}[традиция] :: 0.36666666
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*очень] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*очень] :: 0.66666666
+|           Adv  ->  очень :: 1
+|   
+|__ AdjP  ->  {Adj%TERM}[*разные] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*разные] :: 0.66666666
+|           Adj  ->  разные :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*традиция] :: 0.66666666
+        Noun  ->  традиция :: 1
+
+coverage: 3, weight: 0.33336964
+S  ->  {Word%TERM}[верным]  {Word%TERM}[*другом]  {Verb%TERM}[может] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*верным] :: 0.66666666
+|       Word  ->  верным :: 1
+|   
+|__ {Word%TERM}  ->  Word[*другом] :: 0.66666666
+|       Word  ->  другом :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*может] :: 0.66666666
+        Verb  ->  может :: 1
+
+coverage: 2, weight: 0.33334332
+S  ->  AdjP[*каком-нибудь]  {Noun%TERM}[тема] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*каком-нибудь] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*каком-нибудь] :: 0.66666666
+|           Adj  ->  каком-нибудь :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*тема] :: 0.66666666
+        Noun  ->  тема :: 1
+
+coverage: 2, weight: 0.33334182
+S  ->  AdjP[*близких]  {Noun%TERM}[темах] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*близких] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*близких] :: 0.66666666
+|           Adj  ->  близких :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*темах] :: 0.66666666
+        Noun  ->  темах :: 1
+
+coverage: 4, weight: 0.33334338
+S  ->  {Adj%TERM+}[моей]  {Word%TERM}[*лучшей]  {Word%TERM}[подруге]  {Verb%TERM}[зовут] :: 0.38888888
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*моей] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*моей] :: 0.66666666
+|           Adj  ->  моей :: 1
+|   
+|__ {Word%TERM}  ->  Word[*лучшей] :: 0.66666666
+|       Word  ->  лучшей :: 1
+|   
+|__ {Word%TERM}  ->  Word[*подруге] :: 0.66666666
+|       Word  ->  подруге :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*зовут] :: 0.66666666
+        Verb  ->  зовут :: 1
+
+coverage: 2, weight: 0.33333568
+S  ->  AdjP[*мой]  {Noun%TERM}[слёзы] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*мой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*мой] :: 0.66666666
+|           Adj  ->  мой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*слёзы] :: 0.66666666
+        Noun  ->  слёзы :: 1
+
+coverage: 3, weight: 0.33334076
+S  ->  {Word%TERM}[этого]  {Word%TERM}[*названия]  {Verb%TERM}[заключается] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*этого] :: 0.66666666
+|       Word  ->  этого :: 1
+|   
+|__ {Word%TERM}  ->  Word[*названия] :: 0.66666666
+|       Word  ->  названия :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*заключается] :: 0.66666666
+        Verb  ->  заключается :: 1
+
+coverage: 2, weight: 0.33333528
+S  ->  AdjP[*разные]  {Noun%TERM}[употребления] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*разные] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*разные] :: 0.66666666
+|           Adj  ->  разные :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*употребления] :: 0.66666666
+        Noun  ->  употребления :: 1
+
+coverage: 2, weight: 0.33333514
+S  ->  AdjP[*важнейших]  {Noun%TERM}[качеств] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*важнейших] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*важнейших] :: 0.66666666
+|           Adj  ->  важнейших :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*качеств] :: 0.66666666
+        Noun  ->  качеств :: 1
+
+coverage: 4, weight: 0.333335
+S  ->  {что%LEMMA}[*что]  {Word%TERM}[такой]  {Noun%TERM}[друг]  Punct[?] :: 0.35
+|   
+|__ {что%LEMMA}  ->  что[*что] :: 0.66666666
+|       что  ->  что :: 1
+|   
+|__ {Word%TERM}  ->  Word[*такой] :: 0.66666666
+|       Word  ->  такой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Punct  ->  ? :: 1
+
+coverage: 4, weight: 0.33333493
+S  ->  {Noun%TERM}[*друг]  Def[–]  DefW[это человек] :: 0.35
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Def  ->  Hyphen[*–] :: 0.66666666
+|       Hyphen  ->  – :: 1
+|   
+|__ DefW  ->  Adj[*это]  Noun[человек] :: 0.43333333
+    |   
+    |__ Adj  ->  это :: 1
+    |   
+    |__ Noun  ->  человек :: 1
+
+coverage: 3, weight: 0.3333347
+S  ->  {Adj%TERM+}[*мой любимая]  {Noun%TERM}[книга] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*мой]  {Adj%TERM}[любимая] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*мой] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*мой] :: 0.66666666
+|   |           Adj  ->  мой :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*любимая] :: 0.66666666
+|           Adj  ->  любимая :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*книга] :: 0.66666666
+        Noun  ->  книга :: 1
+
+coverage: 2, weight: 0.33333429
+S  ->  AdjP[*это]  {Noun%TERM}[человек] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*человек] :: 0.66666666
+        Noun  ->  человек :: 1
+
+coverage: 4, weight: 0.33333421
+S  ->  {Adj%TERM+}[*своей самого лучшего]  {Noun%TERM}[друга] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*своей самого]  {Adj%TERM}[лучшего] :: 0.36666666
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM+}[*своей]  {Adj%TERM}[самого] :: 0.43333333
+|   |   |   
+|   |   |__ {Adj%TERM+}  ->  {Adj%TERM}[*своей] :: 0.66666666
+|   |   |       {Adj%TERM}  ->  Adj[*своей] :: 0.66666666
+|   |   |           Adj  ->  своей :: 1
+|   |   |   
+|   |   |__ {Adj%TERM}  ->  Adj[*самого] :: 0.66666666
+|   |           Adj  ->  самого :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*лучшего] :: 0.66666666
+|           Adj  ->  лучшего :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друга] :: 0.66666666
+        Noun  ->  друга :: 1
+
+coverage: 2, weight: 0.33333406
+S  ->  AdjP[*мои]  {Noun%TERM}[родители] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*мои] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*мои] :: 0.66666666
+|           Adj  ->  мои :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*родители] :: 0.66666666
+        Noun  ->  родители :: 1
+
+coverage: 3, weight: 0.33333396
+S  ->  {Adv%TERM+}[*просто]  AdjP[мой]  {Noun%TERM}[дело] :: 0.36666666
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*просто] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*просто] :: 0.66666666
+|           Adv  ->  просто :: 1
+|   
+|__ AdjP  ->  {Adj%TERM}[*мой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*мой] :: 0.66666666
+|           Adj  ->  мой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*дело] :: 0.66666666
+        Noun  ->  дело :: 1
+
+coverage: 2, weight: 0.33333387
+S  ->  AdjP[*разный]  {Noun%TERM}[часть] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*разный] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*разный] :: 0.66666666
+|           Adj  ->  разный :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*часть] :: 0.66666666
+        Noun  ->  часть :: 1
+
+coverage: 3, weight: 0.33333391
+S  ->  {Word%TERM}[*я]  {SimConjAnd%TERM}[и]  {Word%TERM}[другой]  {Verb%TERM}[радуется] :: 0.35185185
+|   
+|__ {Word%TERM}  ->  Word[*я] :: 0.66666666
+|       Word  ->  я :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*другой] :: 0.66666666
+|       Word  ->  другой :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*радуется] :: 0.66666666
+        Verb  ->  радуется :: 1
+
+coverage: 3, weight: 0.33333379
+S  ->  {Adv%TERM+}[*только]  AdjP[маленький]  {Noun%TERM}[окно] :: 0.36666666
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*только] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*только] :: 0.66666666
+|           Adv  ->  только :: 1
+|   
+|__ AdjP  ->  {Adj%TERM}[*маленький] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*маленький] :: 0.66666666
+|           Adj  ->  маленький :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*окно] :: 0.66666666
+        Noun  ->  окно :: 1
+
+coverage: 4, weight: 0.33333378
+S  ->  {что%LEMMA}[*что]  {Word%TERM}[такой]  {Noun%TERM}[друг]  Punct[.] :: 0.35
+|   
+|__ {что%LEMMA}  ->  что[*что] :: 0.66666666
+|       что  ->  что :: 1
+|   
+|__ {Word%TERM}  ->  Word[*такой] :: 0.66666666
+|       Word  ->  такой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Punct  ->  . :: 1
+
+coverage: 2, weight: 0.33333372
+S  ->  AdjP[*хорошее]  {Noun%TERM}[друзей] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*хорошее] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*хорошее] :: 0.66666666
+|           Adj  ->  хорошее :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзей] :: 0.66666666
+        Noun  ->  друзей :: 1
+
+coverage: 3, weight: 0.33333363
+S  ->  {Adj%TERM+}[*это тот]  {Noun%TERM}[человек] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*это]  {Adj%TERM}[тот] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*это] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|   |           Adj  ->  это :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*тот] :: 0.66666666
+|           Adj  ->  тот :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*человек] :: 0.66666666
+        Noun  ->  человек :: 1
+
+coverage: 2, weight: 0.3333336
+S  ->  AdjP[*социальные]  {Noun%TERM}[жители] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*социальные] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*социальные] :: 0.66666666
+|           Adj  ->  социальные :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*жители] :: 0.66666666
+        Noun  ->  жители :: 1
+
+coverage: 1, weight: 0.33333352
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33336936
+S  ->  AdjP[*разных]  {Noun%TERM}[культурах] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*разных] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*разных] :: 0.66666666
+|           Adj  ->  разных :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*культурах] :: 0.66666666
+        Noun  ->  культурах :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33336579
+S  ->  AdjP[*разные]  {Noun%TERM}[традиция] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*разные] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*разные] :: 0.66666666
+|           Adj  ->  разные :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*традиция] :: 0.66666666
+        Noun  ->  традиция :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33334338
+S  ->  {Word%TERM}[лучшей]  {Word%TERM}[*подруге]  {Verb%TERM}[зовут] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*лучшей] :: 0.66666666
+|       Word  ->  лучшей :: 1
+|   
+|__ {Word%TERM}  ->  Word[*подруге] :: 0.66666666
+|       Word  ->  подруге :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*зовут] :: 0.66666666
+        Verb  ->  зовут :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33333493
+S  ->  AdjP[*это]  {Noun%TERM}[человек] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*человек] :: 0.66666666
+        Noun  ->  человек :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33333471
+S  ->  AdjP[*мой]  {Noun%TERM}[любимая] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*мой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*мой] :: 0.66666666
+|           Adj  ->  мой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*любимая] :: 0.66666666
+        Noun  ->  любимая :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33333396
+S  ->  AdjP[*мой]  {Noun%TERM}[дело] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*мой] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*мой] :: 0.66666666
+|           Adj  ->  мой :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*дело] :: 0.66666666
+        Noun  ->  дело :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33333379
+S  ->  AdjP[*маленький]  {Noun%TERM}[окно] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*маленький] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*маленький] :: 0.66666666
+|           Adj  ->  маленький :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*окно] :: 0.66666666
+        Noun  ->  окно :: 1
+
+
+
+==================== multiwords ====================
+
+"что_такой_друг_?": TAuxDicArticle, 
+	грамматика, 
+андрей_и_я_любят: TAuxDicArticle, 
+	грамматика, 
+близких_темах: TAuxDicArticle, 
+	грамматика, 
+важнейших_качеств: TAuxDicArticle, 
+	грамматика, 
+верным_другом_может: TAuxDicArticle, 
+	грамматика, 
+друг_слышал_и_нравится: TAuxDicArticle, 
+	грамматика, 
+друг_–_это_человек: TAuxDicArticle, 
+	грамматика, 
+каком-нибудь_тема: TAuxDicArticle, 
+	грамматика, 
+моей_лучшей_подруге_зовут: TAuxDicArticle, 
+	грамматика, 
+мои_родители: TAuxDicArticle, 
+	грамматика, 
+мой_любимая_книга: TAuxDicArticle, 
+	грамматика, 
+мой_слёзы: TAuxDicArticle, 
+	грамматика, 
+очень_разные_традиция: TAuxDicArticle, 
+	грамматика, 
+просто_мой_дело: TAuxDicArticle, 
+	грамматика, 
+разные_употребления: TAuxDicArticle, 
+	грамматика, 
+разный_часть: TAuxDicArticle, 
+	грамматика, 
+разных_культурах_есть: TAuxDicArticle, 
+	грамматика, 
+своей_самого_лучшего_друга: TAuxDicArticle, 
+	грамматика, 
+социальные_жители: TAuxDicArticle, 
+	грамматика, 
+только_маленький_окно: TAuxDicArticle, 
+	грамматика, 
+хорошее_друзей: TAuxDicArticle, 
+	грамматика, 
+хороший_друг_я_буду: TAuxDicArticle, 
+	грамматика, 
+что_такой_друг_.: TAuxDicArticle, 
+	грамматика, 
+что_такой_друг_?: TAuxDicArticle, 
+	грамматика, 
+это_тот_человек: TAuxDicArticle, 
+	грамматика, 
+это_человек: TAuxDicArticle, 
+	грамматика, 
+этого_названия_заключается: TAuxDicArticle, 
+	грамматика, 
+я_и_другой_радуется: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33428571
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.33454106
+S  ->  AdjP[*самых низких]  {Noun%TERM}[друзей] :: 0.44444444
+|   
+|__ AdjP  ->  {Adj%TERM}[*самых]  {Adj%TERM}[низких] :: 0.66666666
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*самых] :: 0.66666666
+|   |       Adj  ->  самых :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*низких] :: 0.66666666
+|           Adj  ->  низких :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзей] :: 0.66666666
+        Noun  ->  друзей :: 1
+
+coverage: 5, weight: 0.33353494
+S  ->  {Noun%TERM}[*друзья]  {Verb%TERM}[познакомились]  {Word+}[очень долго]  {SimConjAnd%TERM}[и]  {Verb%TERM}[стаем] :: 0.34
+|   
+|__ {Noun%TERM}  ->  Noun[*друзья] :: 0.66666666
+|       Noun  ->  друзья :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*познакомились] :: 0.66666666
+|       Verb  ->  познакомились :: 1
+|   
+|__ {Word+}  ->  {Word+}[*очень]  Word[долго] :: 0.43333333
+|   |   
+|   |__ {Word+}  ->  Word[*очень] :: 0.66666666
+|   |       Word  ->  очень :: 1
+|   |   
+|   |__ Word  ->  долго :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*стаем] :: 0.66666666
+        Verb  ->  стаем :: 1
+
+coverage: 3, weight: 0.33373983
+S  ->  {Word%TERM}[моя]  {Word%TERM}[*фамилия]  {Verb%TERM}[будут] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*моя] :: 0.66666666
+|       Word  ->  моя :: 1
+|   
+|__ {Word%TERM}  ->  Word[*фамилия] :: 0.66666666
+|       Word  ->  фамилия :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*будут] :: 0.66666666
+        Verb  ->  будут :: 1
+
+coverage: 4, weight: 0.33335886
+S  ->  {Adj%TERM+}[который]  {Word%TERM}[*иниверситет]  {Word%TERM}[ей]  {Verb%TERM}[спросил] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*который] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*который] :: 0.66666666
+|           Adj  ->  который :: 1
+|   
+|__ {Word%TERM}  ->  Word[*иниверситет] :: 0.66666666
+|       Word  ->  иниверситет :: 1
+|   
+|__ {Word%TERM}  ->  Word[*ей] :: 0.66666666
+|       Word  ->  ей :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*спросил] :: 0.66666666
+        Verb  ->  спросил :: 1
+
+coverage: 4, weight: 0.33333908
+S  ->  {Adj%TERM+}[которое]  {Word%TERM}[*своим]  {Word%TERM}[друзьям]  {Verb%TERM}[могут] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*которое] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*которое] :: 0.66666666
+|           Adj  ->  которое :: 1
+|   
+|__ {Word%TERM}  ->  Word[*своим] :: 0.66666666
+|       Word  ->  своим :: 1
+|   
+|__ {Word%TERM}  ->  Word[*друзьям] :: 0.66666666
+|       Word  ->  друзьям :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*могут] :: 0.66666666
+        Verb  ->  могут :: 1
+
+coverage: 2, weight: 0.33333851
+S  ->  AdjP[*такие]  {Noun%TERM}[друзей] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*такие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*такие] :: 0.66666666
+|           Adj  ->  такие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзей] :: 0.66666666
+        Noun  ->  друзей :: 1
+
+coverage: 2, weight: 0.33333821
+S  ->  AdjP[*правые]  {Noun%TERM}[рублей] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*правые] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*правые] :: 0.66666666
+|           Adj  ->  правые :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*рублей] :: 0.66666666
+        Noun  ->  рублей :: 1
+
+coverage: 2, weight: 0.33333776
+S  ->  AdjP[*чьей]  {Noun%TERM}[родители] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*чьей] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*чьей] :: 0.66666666
+|           Adj  ->  чьей :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*родители] :: 0.66666666
+        Noun  ->  родители :: 1
+
+coverage: 3, weight: 0.33333679
+S  ->  {Adj%TERM+}[чаще]  {Word%TERM}[*и]  {Word%TERM}[чаще]  {Verb%TERM}[начали] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*чаще] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*чаще] :: 0.66666666
+|           Adj  ->  чаще :: 1
+|   
+|__ {Word%TERM}  ->  Word[*и] :: 0.66666666
+|       Word  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*чаще] :: 0.66666666
+|       Word  ->  чаще :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*начали] :: 0.66666666
+        Verb  ->  начали :: 1
+
+coverage: 3, weight: 0.33333602
+S  ->  {Word%TERM}[*симпатичный]  {SimConjAnd%TERM}[и]  {Word%TERM}[он]  {Verb%TERM}[любит] :: 0.35185185
+|   
+|__ {Word%TERM}  ->  Word[*симпатичный] :: 0.66666666
+|       Word  ->  симпатичный :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*он] :: 0.66666666
+|       Word  ->  он :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*любит] :: 0.66666666
+        Verb  ->  любит :: 1
+
+coverage: 1, weight: 0.3333354
+S  ->  {Word%TERM}[*по-русский] :: 0.66666666
+    {Word%TERM}  ->  Word[*по-русский] :: 0.66666666
+        Word  ->  по-русский :: 1
+
+coverage: 1, weight: 0.33333528
+S  ->  {Word%TERM}[*по-английскии] :: 0.66666666
+    {Word%TERM}  ->  Word[*по-английскии] :: 0.66666666
+        Word  ->  по-английскии :: 1
+
+coverage: 3, weight: 0.33333951
+S  ->  {Word%TERM}[мой]  {Word%TERM}[*друг]  {Verb%TERM}[начал] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*мой] :: 0.66666666
+|       Word  ->  мой :: 1
+|   
+|__ {Word%TERM}  ->  Word[*друг] :: 0.66666666
+|       Word  ->  друг :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*начал] :: 0.66666666
+        Verb  ->  начал :: 1
+
+coverage: 1, weight: 0.33333501
+S  ->  {Word%TERM}[*по-русский] :: 0.66666666
+    {Word%TERM}  ->  Word[*по-русский] :: 0.66666666
+        Word  ->  по-русский :: 1
+
+coverage: 4, weight: 0.33333443
+S  ->  {Adj%TERM+}[которым]  {Word%TERM}[*у]  {Word%TERM}[вас]  {Verb%TERM}[есть] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*которым] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*которым] :: 0.66666666
+|           Adj  ->  которым :: 1
+|   
+|__ {Word%TERM}  ->  Word[*у] :: 0.66666666
+|       Word  ->  у :: 1
+|   
+|__ {Word%TERM}  ->  Word[*вас] :: 0.66666666
+|       Word  ->  вас :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*есть] :: 0.66666666
+        Verb  ->  есть :: 1
+
+coverage: 2, weight: 0.33333442
+S  ->  AdjP[*хорошие]  {Noun%TERM}[отношение] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*хорошие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*хорошие] :: 0.66666666
+|           Adj  ->  хорошие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*отношение] :: 0.66666666
+        Noun  ->  отношение :: 1
+
+coverage: 2, weight: 0.33333431
+S  ->  AdjP[*этом]  {Noun%TERM}[время] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*этом] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*этом] :: 0.66666666
+|           Adj  ->  этом :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*время] :: 0.66666666
+        Noun  ->  время :: 1
+
+coverage: 2, weight: 0.33333412
+S  ->  AdjP[*наши]  {Noun%TERM}[дружбы] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*наши] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*наши] :: 0.66666666
+|           Adj  ->  наши :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*дружбы] :: 0.66666666
+        Noun  ->  дружбы :: 1
+
+coverage: 1, weight: 0.3333341
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33369565
+S  ->  AdjP[*низких]  {Noun%TERM}[друзей] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*низких] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*низких] :: 0.66666666
+|           Adj  ->  низких :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзей] :: 0.66666666
+        Noun  ->  друзей :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33333914
+S  ->  {Adj%TERM+}[*которое своим]  {Noun%TERM}[друзьям] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*которое]  {Adj%TERM}[своим] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*которое] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*которое] :: 0.66666666
+|   |           Adj  ->  которое :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*своим] :: 0.66666666
+|           Adj  ->  своим :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзьям] :: 0.66666666
+        Noun  ->  друзьям :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.3333525
+S  ->  {Word%TERM}[своим]  {Word%TERM}[*друзьям]  {Verb%TERM}[могут] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*своим] :: 0.66666666
+|       Word  ->  своим :: 1
+|   
+|__ {Word%TERM}  ->  Word[*друзьям] :: 0.66666666
+|       Word  ->  друзьям :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*могут] :: 0.66666666
+        Verb  ->  могут :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33333575
+S  ->  {Adj%TERM+}[симпатичный]  {Word%TERM}[*и]  {Word%TERM}[он]  {Verb%TERM}[любит] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*симпатичный] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*симпатичный] :: 0.66666666
+|           Adj  ->  симпатичный :: 1
+|   
+|__ {Word%TERM}  ->  Word[*и] :: 0.66666666
+|       Word  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*он] :: 0.66666666
+|       Word  ->  он :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*любит] :: 0.66666666
+        Verb  ->  любит :: 1
+
+
+
+==================== multiwords ====================
+
+друзья_познакомились_очень_долго_и_стаем: TAuxDicArticle, 
+	грамматика, 
+которое_своим_друзьям_могут: TAuxDicArticle, 
+	грамматика, 
+который_иниверситет_ей_спросил: TAuxDicArticle, 
+	грамматика, 
+которым_у_вас_есть: TAuxDicArticle, 
+	грамматика, 
+мой_друг_начал: TAuxDicArticle, 
+	грамматика, 
+моя_фамилия_будут: TAuxDicArticle, 
+	грамматика, 
+наши_дружбы: TAuxDicArticle, 
+	грамматика, 
+по-английскии: TAuxDicArticle, 
+	грамматика, 
+по-русский: TAuxDicArticle, 
+	грамматика, 
+правые_рублей: TAuxDicArticle, 
+	грамматика, 
+самых_низких_друзей: TAuxDicArticle, 
+	грамматика, 
+симпатичный_и_он_любит: TAuxDicArticle, 
+	грамматика, 
+такие_друзей: TAuxDicArticle, 
+	грамматика, 
+хорошие_отношение: TAuxDicArticle, 
+	грамматика, 
+чаще_и_чаще_начали: TAuxDicArticle, 
+	грамматика, 
+чьей_родители: TAuxDicArticle, 
+	грамматика, 
+этом_время: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33555555
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.33555555
+S  ->  {Adj%TERM+}[*это близкие]  {Noun%TERM}[отношения] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*это]  {Adj%TERM}[близкие] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*это] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|   |           Adj  ->  это :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*близкие] :: 0.66666666
+|           Adj  ->  близкие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*отношения] :: 0.66666666
+        Noun  ->  отношения :: 1
+
+coverage: 1, weight: 0.33398692
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33611111
+S  ->  AdjP[*это]  {Noun%TERM}[близкие] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*близкие] :: 0.66666666
+        Noun  ->  близкие :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33555555
+S  ->  AdjP[*близкие]  {Noun%TERM}[отношения] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*близкие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*близкие] :: 0.66666666
+|           Adj  ->  близкие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*отношения] :: 0.66666666
+        Noun  ->  отношения :: 1
+
+
+
+==================== multiwords ====================
+
+это_близкие_отношения: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33443223
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.33443223
+S  ->  AdjP[*какие-то]  {Noun%TERM}[недостатки] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*какие-то] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*какие-то] :: 0.66666666
+|           Adj  ->  какие-то :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*недостатки] :: 0.66666666
+        Noun  ->  недостатки :: 1
+
+coverage: 1, weight: 0.33416666
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+какие-то_недостатки: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33611111
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.36666666
+S  ->  {Word%TERM}[этим]  {Word%TERM}[*качеством]  {Verb%TERM}[обладает] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*этим] :: 0.66666666
+|       Word  ->  этим :: 1
+|   
+|__ {Word%TERM}  ->  Word[*качеством] :: 0.66666666
+|       Word  ->  качеством :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*обладает] :: 0.66666666
+        Verb  ->  обладает :: 1
+
+coverage: 1, weight: 0.33443223
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+этим_качеством_обладает: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33391812
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33376623
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33484848
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.35555555
+S  ->  {Word%TERM}[моей]  {Word%TERM}[*жизни]  {Adv%TERM}[тоже]  {Verb%TERM}[была] :: 0.38888888
+|   
+|__ {Word%TERM}  ->  Word[*моей] :: 0.66666666
+|       Word  ->  моей :: 1
+|   
+|__ {Word%TERM}  ->  Word[*жизни] :: 0.66666666
+|       Word  ->  жизни :: 1
+|   
+|__ {Adv%TERM}  ->  Adv[*тоже] :: 0.66666666
+|       Adv  ->  тоже :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*была] :: 0.66666666
+        Verb  ->  была :: 1
+
+coverage: 1, weight: 0.33555555
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+моей_жизни_тоже_была: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33443223
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33611111
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33416666
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.34333333
+S  ->  {Adv%TERM+}[*снова]  AdjP[лучшие]  {Noun%TERM}[друзья] :: 0.36666666
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*снова] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*снова] :: 0.66666666
+|           Adv  ->  снова :: 1
+|   
+|__ AdjP  ->  {Adj%TERM}[*лучшие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*лучшие] :: 0.66666666
+|           Adj  ->  лучшие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзья] :: 0.66666666
+        Noun  ->  друзья :: 1
+
+coverage: 1, weight: 0.33428571
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.34333333
+S  ->  AdjP[*лучшие]  {Noun%TERM}[друзья] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*лучшие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*лучшие] :: 0.66666666
+|           Adj  ->  лучшие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзья] :: 0.66666666
+        Noun  ->  друзья :: 1
+
+
+
+==================== multiwords ====================
+
+снова_лучшие_друзья: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.34333333
+S  ->  AdjP[*важных]  {Noun%TERM}[людях] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*важных] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*важных] :: 0.66666666
+|           Adj  ->  важных :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*людях] :: 0.66666666
+        Noun  ->  людях :: 1
+
+coverage: 2, weight: 0.33376623
+S  ->  AdjP[*близкие]  {Noun%TERM}[родственники] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*близкие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*близкие] :: 0.66666666
+|           Adj  ->  близкие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*родственники] :: 0.66666666
+        Noun  ->  родственники :: 1
+
+coverage: 1, weight: 0.33359788
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+близкие_родственники: TAuxDicArticle, 
+	грамматика, 
+важных_людях: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33416666
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.33690476
+S  ->  {Noun%TERM}[*друг]  Def[-]  DefW[это человек] :: 0.35
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+|       Noun  ->  друг :: 1
+|   
+|__ Def  ->  Hyphen[*-] :: 0.66666666
+|       Hyphen  ->  - :: 1
+|   
+|__ DefW  ->  Adj[*это]  Noun[человек] :: 0.43333333
+    |   
+    |__ Adj  ->  это :: 1
+    |   
+    |__ Noun  ->  человек :: 1
+
+coverage: 1, weight: 0.33372859
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33690476
+S  ->  AdjP[*это]  {Noun%TERM}[человек] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*человек] :: 0.66666666
+        Noun  ->  человек :: 1
+
+
+
+==================== multiwords ====================
+
+друг_-_это_человек: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.33760683
+S  ->  {Word%TERM}[определенных]  {Word%TERM}[*условиях]  {Verb%TERM}[становятся] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*определенных] :: 0.66666666
+|       Word  ->  определенных :: 1
+|   
+|__ {Word%TERM}  ->  Word[*условиях] :: 0.66666666
+|       Word  ->  условиях :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*становятся] :: 0.66666666
+        Verb  ->  становятся :: 1
+
+coverage: 2, weight: 0.33428571
+S  ->  AdjP[*незаменимыми]  {Noun%TERM}[друг] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*незаменимыми] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*незаменимыми] :: 0.66666666
+|           Adj  ->  незаменимыми :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друг] :: 0.66666666
+        Noun  ->  друг :: 1
+
+coverage: 1, weight: 0.33391812
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33484848
+S  ->  AdjP[*определенных]  {Noun%TERM}[условиях] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*определенных] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*определенных] :: 0.66666666
+|           Adj  ->  определенных :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*условиях] :: 0.66666666
+        Noun  ->  условиях :: 1
+
+
+
+==================== multiwords ====================
+
+незаменимыми_друг: TAuxDicArticle, 
+	грамматика, 
+определенных_условиях_становятся: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33690476
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.33385964
+S  ->  AdjP[*корыстных]  {Noun%TERM}[целях] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*корыстных] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*корыстных] :: 0.66666666
+|           Adj  ->  корыстных :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*целях] :: 0.66666666
+        Noun  ->  целях :: 1
+
+coverage: 1, weight: 0.33376623
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+корыстных_целях: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.33809523
+S  ->  {Adj%TERM+}[это]  {Word%TERM}[*наоборот]  {Word%TERM}[не]  {Verb%TERM}[приносит] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Word%TERM}  ->  Word[*наоборот] :: 0.66666666
+|       Word  ->  наоборот :: 1
+|   
+|__ {Word%TERM}  ->  Word[*не] :: 0.66666666
+|       Word  ->  не :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*приносит] :: 0.66666666
+        Verb  ->  приносит :: 1
+
+coverage: 1, weight: 0.33484848
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+это_наоборот_не_приносит: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33359788
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.33690476
+S  ->  {Adj%TERM+}[который]  {Word%TERM}[*с]  {Word%TERM}[вами]  {Verb%TERM}[говорит] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*который] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*который] :: 0.66666666
+|           Adj  ->  который :: 1
+|   
+|__ {Word%TERM}  ->  Word[*с] :: 0.66666666
+|       Word  ->  с :: 1
+|   
+|__ {Word%TERM}  ->  Word[*вами] :: 0.66666666
+|       Word  ->  вами :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*говорит] :: 0.66666666
+        Verb  ->  говорит :: 1
+
+coverage: 3, weight: 0.33699633
+S  ->  {Word%TERM}[вашей]  {Word%TERM}[*спиной]  {Verb%TERM}[сплетничает] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*вашей] :: 0.66666666
+|       Word  ->  вашей :: 1
+|   
+|__ {Word%TERM}  ->  Word[*спиной] :: 0.66666666
+|       Word  ->  спиной :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*сплетничает] :: 0.66666666
+        Verb  ->  сплетничает :: 1
+
+coverage: 1, weight: 0.33398692
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+вашей_спиной_сплетничает: TAuxDicArticle, 
+	грамматика, 
+который_с_вами_говорит: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33416666
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.34333333
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.35
+S  ->  AdjP[*такие]  {Noun%TERM}[друзья] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*такие] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*такие] :: 0.66666666
+|           Adj  ->  такие :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*друзья] :: 0.66666666
+        Noun  ->  друзья :: 1
+
+coverage: 1, weight: 0.33611111
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+такие_"друзья": TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33555555
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33364102
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33461538
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.34
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.33416666
+S  ->  AdjP[*твоим]  {Noun%TERM}[успехам] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*твоим] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*твоим] :: 0.66666666
+|           Adj  ->  твоим :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*успехам] :: 0.66666666
+        Noun  ->  успехам :: 1
+
+coverage: 1, weight: 0.33398692
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+твоим_успехам: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.34333333
+S  ->  {Word%TERM}[*Как]  {SimConjAnd%TERM}[и]  {Word%TERM}[вы]  {Verb%TERM}[будете] :: 0.35
+|   
+|__ {Word%TERM}  ->  Word[*Как] :: 0.66666666
+|       Word  ->  Как :: 1
+|   
+|__ {SimConjAnd%TERM}  ->  SimConjAnd[*и] :: 0.66666666
+|       SimConjAnd  ->  и :: 1
+|   
+|__ {Word%TERM}  ->  Word[*вы] :: 0.66666666
+|       Word  ->  вы :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*будете] :: 0.66666666
+        Verb  ->  будете :: 1
+
+coverage: 1, weight: 0.33555555
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+Как_и_вы_будете: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.34
+S  ->  {Adj%TERM+}[*это тот]  {Noun%TERM}[человек] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*это]  {Adj%TERM}[тот] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*это] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|   |           Adj  ->  это :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*тот] :: 0.66666666
+|           Adj  ->  тот :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*человек] :: 0.66666666
+        Noun  ->  человек :: 1
+
+coverage: 1, weight: 0.33391812
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+это_тот_человек: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.34333333
+S  ->  {Adj%TERM+}[То]  {Word%TERM}[*есть]  {Word%TERM}[друг]  {Verb%TERM}[сможет] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM}[*То] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*То] :: 0.66666666
+|           Adj  ->  То :: 1
+|   
+|__ {Word%TERM}  ->  Word[*есть] :: 0.66666666
+|       Word  ->  есть :: 1
+|   
+|__ {Word%TERM}  ->  Word[*друг] :: 0.66666666
+|       Word  ->  друг :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*сможет] :: 0.66666666
+        Verb  ->  сможет :: 1
+
+coverage: 1, weight: 0.33406862
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+То_есть_друг_сможет: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 4, weight: 0.34
+S  ->  {Adv%TERM+}[*лучше]  {Adj%TERM+}[всего истинная]  {Noun%TERM}[сущность] :: 0.35
+|   
+|__ {Adv%TERM+}  ->  {Adv%TERM}[*лучше] :: 0.66666666
+|       {Adv%TERM}  ->  Adv[*лучше] :: 0.66666666
+|           Adv  ->  лучше :: 1
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*всего]  {Adj%TERM}[истинная] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*всего] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*всего] :: 0.66666666
+|   |           Adj  ->  всего :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*истинная] :: 0.66666666
+|           Adj  ->  истинная :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*сущность] :: 0.66666666
+        Noun  ->  сущность :: 1
+
+coverage: 1, weight: 0.33376623
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.34
+S  ->  {Adj%TERM+}[*лучше всего истинная]  {Noun%TERM}[сущность] :: 0.35
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*лучше всего]  {Adj%TERM}[истинная] :: 0.36666666
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM+}[*лучше]  {Adj%TERM}[всего] :: 0.43333333
+|   |   |   
+|   |   |__ {Adj%TERM+}  ->  {Adj%TERM}[*лучше] :: 0.66666666
+|   |   |       {Adj%TERM}  ->  Adj[*лучше] :: 0.66666666
+|   |   |           Adj  ->  лучше :: 1
+|   |   |   
+|   |   |__ {Adj%TERM}  ->  Adj[*всего] :: 0.66666666
+|   |           Adj  ->  всего :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*истинная] :: 0.66666666
+|           Adj  ->  истинная :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*сущность] :: 0.66666666
+        Noun  ->  сущность :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.34
+S  ->  {Adj%TERM+}[*всего истинная]  {Noun%TERM}[сущность] :: 0.36666666
+|   
+|__ {Adj%TERM+}  ->  {Adj%TERM+}[*всего]  {Adj%TERM}[истинная] :: 0.43333333
+|   |   
+|   |__ {Adj%TERM+}  ->  {Adj%TERM}[*всего] :: 0.66666666
+|   |       {Adj%TERM}  ->  Adj[*всего] :: 0.66666666
+|   |           Adj  ->  всего :: 1
+|   |   
+|   |__ {Adj%TERM}  ->  Adj[*истинная] :: 0.66666666
+|           Adj  ->  истинная :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*сущность] :: 0.66666666
+        Noun  ->  сущность :: 1
+
+
+
+==================== multiwords ====================
+
+лучше_всего_истинная_сущность: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 3, weight: 0.34259259
+S  ->  {Word%TERM}[Маленьким]  {Word%TERM}[*принцем]  {Verb%TERM}[говорится] :: 0.44444444
+|   
+|__ {Word%TERM}  ->  Word[*Маленьким] :: 0.66666666
+|       Word  ->  Маленьким :: 1
+|   
+|__ {Word%TERM}  ->  Word[*принцем] :: 0.66666666
+|       Word  ->  принцем :: 1
+|   
+|__ {Verb%TERM}  ->  Verb[*говорится] :: 0.66666666
+        Verb  ->  говорится :: 1
+
+coverage: 1, weight: 0.33372859
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+Маленьким_принцем_говорится: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33461538
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33690476
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33515151
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33376623
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 2, weight: 0.35
+S  ->  AdjP[*это]  {Noun%TERM}[необходимость] :: 0.43333333
+|   
+|__ AdjP  ->  {Adj%TERM}[*это] :: 0.66666666
+|       {Adj%TERM}  ->  Adj[*это] :: 0.66666666
+|           Adj  ->  это :: 1
+|   
+|__ {Noun%TERM}  ->  Noun[*необходимость] :: 0.66666666
+        Noun  ->  необходимость :: 1
+
+coverage: 1, weight: 0.33515151
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+это_необходимость: TAuxDicArticle, 
+	грамматика, 
+
+
+===================== Error_grammar.cxx =====================
+
+coverage: 1, weight: 0.33385964
+S  ->  EOSent[*EOS] :: 0.66666666
+    EOSent  ->  EOS :: 1
+
+
+
+==================== multiwords ====================
+
+
+
