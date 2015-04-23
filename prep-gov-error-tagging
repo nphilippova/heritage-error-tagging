@@ -3,8 +3,6 @@
 import os
 import codecs
 import re
-from flask import Flask, render_template, request, session
-app = Flask(__name__)
 
 lemmedtext = os.system(u'mystem -cig --eng-gr heritage_text.txt text_morph.txt')
 text = codecs.open(u'text_morph.txt', 'r', 'utf-8')
