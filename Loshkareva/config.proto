@@ -3,23 +3,16 @@ encoding "utf-8";
 TTextMinerConfig {
 	Dictionary="dic.gzt";
 	
-	Input = {File ="input_sample.txt"}
-	
-	
-	Output = {File = "output.json"
-				Format = text}
+	Input = {File ="input_coord.txt"}
+		
+	Output = {File = "output_protobuf.json"
+				Format = proto}
 	Articles = [
 			{Name = "грамматика"}
 			]
-	Facts = [
-			{ Name = "Error"}
-			]
-	Facts = [
-			{ Name = "Agreement"}
-			]	
-	Facts = [
-			{ Name = "NumAgr"}
-			]	
+	Articles = [
+			{Name = "плохое_прилаг"}
+			]		
 	Facts = [
 			{ Name = "AgrSP"}
 			]	
