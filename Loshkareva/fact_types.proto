@@ -3,69 +3,35 @@ import "facttypes_base.proto";
 
 message Error: NFactType.TFact
 {
-	required string First = 1;
-}
-
-message Agreement: NFactType.TFact
-{
-	required string A= 1;
-	required string B= 2;
-	required string C= 3;
-	required string D= 4;
-}
-
-message AgrDef: NFactType.TFact
-{
-	required string Def1 = 1;
-	required string Def2 = 2;
-	optional string Def3 = 3;
-}
-
-message AgrAdjNoun: NFactType.TFact
-{
-	optional string Adv1 = 1;
-	required string Adj1 = 2;
-	optional string Adj2 = 3;
-	required string Noun1 = 4;
+	required string Morph = 1;
 }
 
 message AgrAdjNV: NFactType.TFact
 {
-	required string Adj = 1;
-	required string N = 2;
-	optional string Adv = 3;
-	required string V = 4;
+	required string Adj1 = 1;
+	optional string Conj = 2;
+	optional string Adj2 =3;
+	optional string Adj3 = 4;
+	required string N = 5;
+	optional string Adv = 6;
+	optional string V = 7;
 }
 
 
-message AgrNounNoun: NFactType.TFact
-{
-	required string N1 = 1;
-	optional string A1 = 2;
-	optional string V1 = 3;
-	required string N2 = 4;
-}
-
-message AgrNConjNV: NFactType.TFact
-{
-	required string W1 = 1;
-	required string C = 2;
-	required string W2 = 3;
-	required string V = 4;
-}
-
-
-message NumAgr: NFactType.TFact
-{
-	required string A = 1;
-	required string B = 2;
-	required string C = 3;
-}
 message AgrSP: NFactType.TFact
 {
-	required string N = 1;
-	required string V1 = 2;
-	required string Conj = 3;
-	required string V2 = 4;
+    optional string A = 1;
+	required string N = 2;
+	required string V1 = 3;
+    optional string Conj =4;
+	optional string V2 = 5;
+}
+
+message AgrDef: NFactType.TFact
+{
+    required string Def1 = 1;
+	required string Def2 = 2;
+	optional string Def3 = 3;
+  	optional string Def4 = 4;
 
 }
